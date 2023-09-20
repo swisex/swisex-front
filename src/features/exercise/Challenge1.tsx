@@ -5,7 +5,9 @@ import ERD from "./Challenge1.ERD";
 import SystemFlowchart from "./Challenge1.SystemFlowchart";
 import SolutionGraph from "./Challenge1.SolutionGraph";
 
-const senario = `
+const requirements = `
+## Scenario
+
 The organisation **LogiTech Limited** is a logistics New Zealand based organisation leader in the industry, as such, they have come to you as they want to innovate and disrupt their market with a brand new offering: **Logistics as a service**.
 
 After several years in the market, they have spotted the top 5 pain points customers have to deal with when organising or booking the delivery of a package regardless of its destination (local or international), which are:
@@ -149,8 +151,8 @@ export default function Challenge1() {
     <div>
       <h1>Challenge 1</h1>
       <details>
-        <summary>Senario</summary>
-        <ReactMarkdown children={senario} />
+        <summary>Requirements</summary>
+        <ReactMarkdown children={requirements} />
       </details>
       <ReactMarkdown children={problems} />
       <h2>Proposed Digital Solution</h2>

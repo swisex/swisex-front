@@ -31,18 +31,18 @@ Please note that this source code was created specifically for demonstration pur
 const techComponents = `
 ## Technology Stack
 
-1. ### Web Application (Front-end)
+1. ### [Swisex-Front](https://github.com/swisex/swisex-front) (Web Application)
 - **React**: A JavaScript library for building user interfaces, providing a component-based architecture and efficient rendering.
 - **Redux-Toolkit**: A predictable state container for JavaScript apps, enabling centralized state management and efficient data flow.
 - **axios**: A popular HTTP client for making asynchronous requests to the server, allowing easy communication with the back-end.
 
-2. ### API Gateway (Back-end)
+2. ### [Swisex-Back](https://github.com/swisex/swisex-back) (API Gateway)
 - **NodeJS**: A runtime environment for executing JavaScript code on the server-side, providing a non-blocking and event-driven architecture.
 - **Express**: A web application framework for NodeJS, simplifying the process of building robust and scalable web applications.
 - **Static Sites Serving**: A feature provided by Express to serve static files, such as HTML, CSS, and JavaScript files, directly to the client.
 - **axios**: Also used in the back-end to make HTTP requests to external services or microservices.
 
-3. ### Microservices (Back-end)
+3. ### [Swisex-Micro](https://github.com/swisex/swisex-micro) (Microservices)
 - **Docker**: A platform for building, packaging, and distributing applications as lightweight, portable containers, ensuring consistency and reproducibility across different environments.
 - **NodeJS**: Used for implementing microservices, providing a lightweight and efficient runtime environment for running server-side JavaScript code.
 - **Express**: Used in the microservices for building RESTful APIs and handling HTTP requests and responses.
