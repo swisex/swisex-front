@@ -5,6 +5,7 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import Challenge1 from "./Challenge1";
+import Challenge2 from "./Challenge2";
 
 export default function TabBar() {
   const [value, setValue] = React.useState("0");
@@ -34,7 +35,9 @@ export default function TabBar() {
         <TabPanel value="1">
           <Challenge1 />
         </TabPanel>
-        <TabPanel value="2">{value}</TabPanel>
+        <TabPanel value="2">
+          <Challenge2 />
+        </TabPanel>
         <TabPanel value="3">{value}</TabPanel>
         <TabPanel value="4">{value}</TabPanel>
       </TabContext>

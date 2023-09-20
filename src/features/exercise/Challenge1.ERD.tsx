@@ -4,7 +4,7 @@ import Mermaid from "../../lib/Mermaid";
 export default function ERD() {
   const script = `
     ---
-    title: Entity Relationship Diagram
+    title: Entity Relationship Diagram 
     ---
     erDiagram
         USER ||--o{ PACKAGE : "has"
