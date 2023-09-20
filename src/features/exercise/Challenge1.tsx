@@ -1,9 +1,9 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import ERD from "./Challenge1.ERD";
 import SystemFlowchart from "./Challenge1.SystemFlowchart";
+import SolutionGraph from "./Challenge1.SolutionGraph";
 
 const senario = `
 The organisation **LogiTech Limited** is a logistics New Zealand based organisation leader in the industry, as such, they have come to you as they want to innovate and disrupt their market with a brand new offering: **Logistics as a service**.
@@ -34,8 +34,6 @@ const problems = `
 `;
 
 const solution = `
-## Proposed Digital Solution
-
 To address the current challenges and provide a seamless user experience, we propose a digital platform that incorporates the following features:
 
 1. **Online Quotation System:** Customers can get an instant quote for their delivery online, eliminating the need for phone queues.
@@ -148,16 +146,16 @@ The proposed system architecture is as follows:
 
 export default function Challenge1() {
   return (
-    <>
+    <div>
       <h1>Challenge 1</h1>
       <details>
         <summary>Senario</summary>
         <ReactMarkdown children={senario} />
       </details>
-      <ReactMarkdown
-        children={problems + solution + systemArch}
-        remarkPlugins={[remarkGfm]}
-      />
+      <ReactMarkdown children={problems} />
+      <h2>Proposed Digital Solution</h2>
+      <SolutionGraph />
+      <ReactMarkdown children={solution + systemArch} />
       <SystemFlowchart />
       <ReactMarkdown children={erd} />
       <ERD />
@@ -178,6 +176,6 @@ export default function Challenge1() {
           },
         }}
       />
-    </>
+    </div>
   );
 }

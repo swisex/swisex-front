@@ -8,6 +8,7 @@ import Challenge1 from "./Challenge1";
 import Challenge2 from "./Challenge2";
 import Challenge3 from "./Challenge3";
 import Challenge4 from "./Challenge4";
+import Intro from "./Intro";
 
 export default function TabBar() {
   const [value, setValue] = React.useState("0");
@@ -33,7 +34,9 @@ export default function TabBar() {
             <Tab label="Challenge 4" value="4" />
           </TabList>
         </Box>
-        <TabPanel value="0">Hello</TabPanel>
+        <TabPanel value="0">
+          <Intro />
+        </TabPanel>
         <TabPanel value="1">
           <Challenge1 />
         </TabPanel>
