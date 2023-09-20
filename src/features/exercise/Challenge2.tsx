@@ -18,26 +18,10 @@ Note: Working code is NOT expected, however, we do ask you to use the following 
 *	any other technology you consider necessary to deliver a high-quality solution.
 `;
 
-// const techComponents = `
-// ## Technology Components
-
-// The following technology components have been used to develop this solution:
-
-// * **NodeJS:** Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
-// * **Express:** Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-// * **Typescript:** TypeScript is an open-source language that builds on JavaScript by adding static type definitions.
-// * **Docker:** Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
-// * **React:** React is an open-source, front end, JavaScript library for building user interfaces or UI components.
-// * **Redux:** Redux is an open-source JavaScript library for managing application state.
-// * **Axios:** Axios is a promise-based HTTP client for the browser and Node.js.
-
-// The component relationship flow chart is as follows:
-// `;
-
 const header = `
 ## Source Codes
 
-All the source code for this project can be found in the Github repository linked below. The repository contains code for the front-end, built with React, and the back-end, which handles site rendering and functions as an API gateway, and microservices responding to the API calls. Additionally, it includes code for the microservice server, which interconnects with other components.
+All the source code for this project can be found in the Github repository linked below. The repository contains code for the front-end, built with React, and the back-end, which handles site rendering and functions as an API gateway. Additionally, it includes code for the microservice server, which is responding to the API calls.
 
 Please note that this source code was created specifically for demonstration purposes. As such, elements such as authentication, session management, and database integration have been intentionally excluded.
 

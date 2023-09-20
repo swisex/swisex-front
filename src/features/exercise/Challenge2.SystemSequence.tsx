@@ -8,7 +8,7 @@ export default function SystemSequence() {
     ---
     sequenceDiagram
       participant User as User
-      participant Front as Swisex-Front (React)
+      participant Front as Swisex-Front (React Web)
       participant APIGateway as Swisex-Back (API Gateway)
       participant Microservices as Swisex-Micro (Microservices)
       participant Database as Database
