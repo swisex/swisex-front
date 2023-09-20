@@ -1,6 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import ERD from "./Challenge1.ERD";
 import SystemFlowchart from "./Challenge1.SystemFlowchart";
 
@@ -160,7 +161,23 @@ export default function Challenge1() {
       <SystemFlowchart />
       <ReactMarkdown children={erd} />
       <ERD />
-      <ReactMarkdown children={tableSchemes} remarkPlugins={[remarkGfm]} />
+      <ReactMarkdown
+        children={tableSchemes}
+        components={{
+          code({ node, inline, className, children, ...props }) {
+            const match = /language-(\w+)/.exec(className || "");
+            return !inline && match ? (
+              <SyntaxHighlighter language="typescript">
+                {String(children).replace(/\n$/, "")}
+              </SyntaxHighlighter>
+            ) : (
+              <code className={className} {...props}>
+                {children}
+              </code>
+            );
+          },
+        }}
+      />
     </>
   );
 }
