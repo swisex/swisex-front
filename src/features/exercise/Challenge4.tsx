@@ -27,8 +27,8 @@ export default function Challenge4() {
         <summary>Requirements</summary>
         <ReactMarkdown children={requirements1} />
         <img
-          style={{ width: "100%", height: "auto", maxWidth: "1024px" }}
-          src="https://github.com/swisex/swisex-front/blob/9e8b3e827acf9f5dddf68fb7ad35aa84c56da68a/src/features/exercise/challenge3.png?raw=true"
+          style={{ width: "100%", height: "auto", maxWidth: "768px" }}
+          src="https://github.com/swisex/swisex-front/blob/master/src/features/exercise/challenge4.png?raw=true"
           alt="challenge 4"
         />
         <ReactMarkdown children={requirements2} />
