@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import TechGraph from "./Challenge2.TechGraph";
 import SystemSequence from "./Challenge2.SystemSequence";
 
-const senario = `
+const require = `
 Design and construct a high-level digital solution(Frontend & Backend) that could be used to satisfy the requirements for LogiTech Limited, the code should be hosted in a public online repository.
 
 Note: Working code is NOT expected, however, we do ask you to use the following stack:
@@ -52,13 +52,13 @@ By utilizing these technology components, the system is designed to achieve a sc
 It also leverages **Typescript** along with other technologies in the stack to improve code stability and maintainability.
 `;
 
-export default function Challenge1() {
+export default function Challenge2() {
   return (
     <>
       <h1>Challenge 2</h1>
       <details>
         <summary>Requirements</summary>
-        <ReactMarkdown children={senario} />
+        <ReactMarkdown children={require} />
       </details>
       <ReactMarkdown children={header} />
       <h2> System Workflow </h2>
