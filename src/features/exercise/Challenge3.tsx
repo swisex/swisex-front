@@ -1,6 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import CompDiagram from "./Challenge3.CompDiagram";
 
 const requirements = `
 Given the following template, please provide a list of all components that would be needed for this.
@@ -32,7 +33,7 @@ const components = `
 9. **Search bar**: An input component that filters tasks based on user input, possibly with a **calendar date picker component** incorporated.
 10. **Share**: A button component that allows the user to share their current view or task.
 
-**Main Panel:**
+**Central Panel:**
 
 11. **TaskStage**: A React component that represents a stage in the kanban board (To Do, In Progress, Done). It renders a list of TaskCard components.
   * **To Do**: A task board component that displays tasks that need to be done.
@@ -126,6 +127,8 @@ export default function Challenge3() {
         />
       </details>
       <ReactMarkdown children={components} />
+      <h2>Components Diagram</h2>
+      <CompDiagram />
       <ReactMarkdown
         children={psuedoCode}
         components={{
