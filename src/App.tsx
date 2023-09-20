@@ -7,7 +7,7 @@ import TabBar from "./features/exercise/TabBar";
 
 function App() {
   const accessToken = useAppSelector(selectAccessToken);
-  if (!accessToken) {
+  if (accessToken) {
     return <Login />;
   } else {
     return <TabBar />;
