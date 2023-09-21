@@ -1,5 +1,5 @@
 import React from "react";
-import Mermaid from "../../lib/Mermaid";
+import Mermaid from "../../../lib/Mermaid";
 
 export default function SystemSequence() {
   const script = `

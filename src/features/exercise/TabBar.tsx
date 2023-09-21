@@ -4,11 +4,11 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import Challenge1 from "./Challenge1";
-import Challenge2 from "./Challenge2";
-import Challenge3 from "./Challenge3";
-import Challenge4 from "./Challenge4";
-import Intro from "./Intro";
+import Intro from "./intro/Intro";
+import Challenge1 from "./challenge1/Challenge1";
+import Challenge2 from "./challenge2/Challenge2";
+import Challenge3 from "./challenge3/Challenge3";
+import Challenge4 from "./challenge4/Challenge4";
 
 export default function TabBar() {
   const [value, setValue] = React.useState("0");
