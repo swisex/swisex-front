@@ -156,7 +156,7 @@ export default function MadalView() {
           right: 0,
           display: "flex",
           flexDirection: "row",
-          justifyContent: "flex-end", // 추가된 부분
+          justifyContent: "flex-end",
           alignItems: "center",
           marginTop: "10px",
         }}

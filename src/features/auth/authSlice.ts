@@ -18,7 +18,7 @@ const initialState: AuthState = {
   success: false,
 };
 
-const backendURL = "http://192.168.5.206:9000";
+const backendURL = "http://localhost:9000";
 
 export const loginAsync = createAsyncThunk(
   "auth/login",

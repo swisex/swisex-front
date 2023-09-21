@@ -5,6 +5,7 @@ import MadalView from "./Challenge4.ModalView";
 import CloseIcon from "@material-ui/icons/Close";
 import challenge4img from "./challenge4.png";
 import "./challenge4.css";
+// import CodeViewer from "./Challenge4.CoreViewer";
 
 Modal.setAppElement("#root");
 
@@ -23,7 +24,6 @@ Notes:
 *	filters & pagination are desired but not needed.
 *	the submission does not need to match the UI styles, however, the closer it gets the better.
 *	create and load mock data from a json file.
-
 `;
 
 function ModalButton() {
@@ -98,6 +98,10 @@ export default function Challenge4() {
         <ReactMarkdown children={requirements2} />
       </details>
       <ModalButton />
+      {/* <CodeViewer
+        repo={"swisex/swisex-front"}
+        path={"/src/features/exercise/challenge4/Challenge4.ModalView.tsx"}
+      /> */}
     </>
   );
 }
