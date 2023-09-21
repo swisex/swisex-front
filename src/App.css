@@ -37,25 +37,3 @@
     transform: translateY(0px);
   }
 }
-
-.shareInfoWrapper {
-  display: flex;
-  align-items: center;
-}
-
-.shareInfoWrapper > div {
-  margin-left: 10px; /* Adds some space between the icon and the text */
-}
-
-table {
-  color: #777; 
-}
-
-table tr {
-  border-bottom: 1px solid #ddd; 
-}
-
-.status-button {
-  width: 100px;
-  height: 50px;
-}

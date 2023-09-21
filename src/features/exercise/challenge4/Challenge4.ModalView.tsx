@@ -3,6 +3,7 @@ import { IconButton, Button, Typography } from "@material-ui/core";
 import DeleteIcon from "@material-ui/icons/Delete";
 import CloseIcon from "@material-ui/icons/Close";
 import PersonIcon from "@material-ui/icons/Person";
+import "./challenge4.css";
 
 interface ShareInfo {
   sharedTo: { name: string; email: string };
@@ -172,18 +173,27 @@ export default function MadalView() {
       </div>
       <div
         style={{
-          position: "fixed",
-          right: "10px",
-          bottom: "10px",
+          position: "relative",
+          right: 0,
           display: "flex",
           flexDirection: "row",
-          alignItems: "flex-end",
+          justifyContent: "flex-end", // 추가된 부분
+          alignItems: "center",
+          marginTop: "10px",
         }}
       >
-        <button disabled={page === 1} onClick={() => setPage(1)}>
+        <button
+          className="page-button-style"
+          disabled={page === 1}
+          onClick={() => setPage(1)}
+        >
           {"<<"}
         </button>
-        <button disabled={page === 1} onClick={() => setPage(page - 1)}>
+        <button
+          className="page-button-style"
+          disabled={page === 1}
+          onClick={() => setPage(page - 1)}
+        >
           {"<"}
         </button>
         {Array(Math.ceil(data.length / itemsPerPage))
@@ -191,22 +201,25 @@ export default function MadalView() {
           .map((_, index) => (
             <button
               key={index}
-              style={{
-                backgroundColor: page === index + 1 ? "skyblue" : "white",
-                margin: "5px",
-              }}
+              className={`page-button-style ${
+                page === index + 1
+                  ? "page-button-active"
+                  : "page-button-inactive"
+              }`}
               onClick={() => setPage(index + 1)}
             >
               {index + 1}
             </button>
           ))}
         <button
+          className="page-button-style"
           disabled={page === Math.ceil(data.length / itemsPerPage)}
           onClick={() => setPage(page + 1)}
         >
           {">"}
         </button>
         <button
+          className="page-button-style"
           disabled={page === Math.ceil(data.length / itemsPerPage)}
           onClick={() => setPage(Math.ceil(data.length / itemsPerPage))}
         >
