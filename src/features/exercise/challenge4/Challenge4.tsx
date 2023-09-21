@@ -3,9 +3,9 @@ import ReactMarkdown from "react-markdown";
 import Modal from "react-modal";
 import MadalView from "./Challenge4.ModalView";
 import CloseIcon from "@material-ui/icons/Close";
+import challenge4img from "./challenge4.png";
 import "./challenge4.css";
 
-// Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement("#root");
 
 const requirements1 = `
@@ -39,7 +39,9 @@ function ModalButton() {
 
   return (
     <div>
-      <button onClick={openModal}>Open Modal</button>
+      <button id="modalButton" onClick={openModal}>
+        Open Modal
+      </button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -85,12 +87,12 @@ export default function Challenge4() {
   return (
     <>
       <h1>Challenge 4</h1>
-      <details>
+      <details open>
         <summary>Requirements</summary>
         <ReactMarkdown children={requirements1} />
         <img
           style={{ width: "100%", height: "auto", maxWidth: "768px" }}
-          src="https://github.com/swisex/swisex-front/blob/master/src/features/exercise/challenge4.png?raw=true"
+          src={challenge4img}
           alt="challenge 4"
         />
         <ReactMarkdown children={requirements2} />

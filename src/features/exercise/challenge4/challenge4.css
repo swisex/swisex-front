@@ -42,3 +42,16 @@
     border-spacing: 0 15px;
     border-collapse: separate;
   }
+
+  #modalButton {
+    width: 200px;
+    height: 50px;
+  
+    border-radius: 25px;
+    border: none;
+ 
+    background-color: rgb(29, 138, 226);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }

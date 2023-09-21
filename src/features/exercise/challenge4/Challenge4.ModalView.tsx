@@ -15,24 +15,6 @@ interface ShareInfo {
 
 type StatusType = "EXPIRED" | "REVOKED" | "ACTIVE";
 
-export const sampleData: ShareInfo[] = [
-  {
-    sharedTo: {
-      name: "John Doe",
-      email: "john@example.com",
-    },
-    sharedBy: {
-      name: "Jane Doe",
-      email: "jane@example.com",
-    },
-    sharedOn: new Date(),
-    sharedFor: "1 week",
-    status: "ACTIVE",
-    actions: true,
-  },
-  // Add more data here...
-];
-
 export default function MadalView() {
   const [data, setData] = useState<ShareInfo[]>([]); // Initialize state to an empty array
   const [page, setPage] = useState(1);

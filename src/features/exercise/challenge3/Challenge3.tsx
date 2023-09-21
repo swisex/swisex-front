@@ -2,6 +2,7 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import CompDiagram from "./Challenge3.CompDiagram";
+import challenge3img from "./challenge3.png";
 
 const requirements = `
 Given the following template, please provide a list of all components that would be needed for this.
@@ -122,7 +123,7 @@ export default function Challenge3() {
         <ReactMarkdown children={requirements} />
         <img
           style={{ width: "100%", height: "auto", maxWidth: "768px" }}
-          src="https://github.com/swisex/swisex-front/blob/9e8b3e827acf9f5dddf68fb7ad35aa84c56da68a/src/features/exercise/challenge3.png?raw=true"
+          src={challenge3img}
           alt="challenge 3"
         />
       </details>
