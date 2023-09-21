@@ -5,7 +5,7 @@ import MadalView from "./Challenge4.ModalView";
 import CloseIcon from "@material-ui/icons/Close";
 import challenge4img from "./challenge4.png";
 import "./challenge4.css";
-// import CodeViewer from "./Challenge4.CoreViewer";
+import CodeSandBox from "./CodeSandBox.png";
 
 Modal.setAppElement("#root");
 
@@ -27,7 +27,7 @@ Notes:
 `;
 
 const answer = `
-_**Modal source will be posted on Stackblitz soon.**_
+_**Source codes can be checked at CodeSandBox below.**_
 `;
 
 function ModalButton() {
@@ -101,12 +101,15 @@ export default function Challenge4() {
         />
         <ReactMarkdown children={requirements2} />
       </details>
-      <ReactMarkdown children={answer} />
       <ModalButton />
-      {/* <CodeViewer
-        repo={"swisex/swisex-front"}
-        path={"/src/features/exercise/challenge4/Challenge4.ModalView.tsx"}
-      /> */}
+      <ReactMarkdown children={answer} />
+      <a
+        href="https://codesandbox.io/p/github/swisex/react-modal"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img src={CodeSandBox} alt="CodeSandbox" style={{ width: "200px" }} />
+      </a>
     </>
   );
 }
