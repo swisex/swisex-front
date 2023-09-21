@@ -26,6 +26,10 @@ Notes:
 *	create and load mock data from a json file.
 `;
 
+const answer = `
+_**Modal source will be posted on Stackblitz soon.**_
+`;
+
 function ModalButton() {
   const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -97,6 +101,7 @@ export default function Challenge4() {
         />
         <ReactMarkdown children={requirements2} />
       </details>
+      <ReactMarkdown children={answer} />
       <ModalButton />
       {/* <CodeViewer
         repo={"swisex/swisex-front"}

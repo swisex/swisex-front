@@ -146,6 +146,18 @@ The proposed system architecture is as follows:
 5. **Database:** The database stores all the data required by the application.
 `;
 
+const otherArch = `
+## Other Architectural Approaches 
+
+When building microservices using Node.js, there are various methods for communication between the API Gateway and the microservices. The commonly used methods include HTTP/HTTPS, gRPC, and asynchronous message passing using Message Queues (MQ).
+
+- **HTTP/HTTPS**: This is the most basic and widely used method. It exchanges data via RESTful APIs. Data is transmitted in the form of JSON, and each microservice possesses independent endpoints.
+
+- **gRPC**: gRPC is a high-performance, open-source general RPC (Remote Procedure Call) framework developed by Google. It uses Protocol Buffers for data serialization in communication, which is faster and more efficient than transmitting data in JSON format.
+
+- **Message Queues (MQ)**: This method communicates between microservices through asynchronous message passing. Message queues act as an intermediary that allows services to send and receive messages from each other. This method is useful for maintaining services independently and controlling service loads.
+`;
+
 export default function Challenge1() {
   return (
     <div>
@@ -157,8 +169,7 @@ export default function Challenge1() {
       <ReactMarkdown children={problems} />
       <h2>Proposed Digital Solution</h2>
       <SolutionGraph />
-      <ReactMarkdown children={solution + systemArch} />
-      <SystemFlowchart />
+      <ReactMarkdown children={solution} />
       <ReactMarkdown children={erd} />
       <ERD />
       <ReactMarkdown
@@ -178,6 +189,9 @@ export default function Challenge1() {
           },
         }}
       />
+      <ReactMarkdown children={systemArch} />
+      <SystemFlowchart />
+      <ReactMarkdown children={otherArch} />
     </div>
   );
 }

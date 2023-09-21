@@ -52,18 +52,6 @@ By utilizing these technology components, the system is designed to achieve a sc
 It also leverages **Typescript** along with other technologies in the stack to improve code stability and maintainability.
 `;
 
-const otherArch = `
-## Other Architectural Approaches 
-
-When building microservices using Node.js, there are various methods for communication between the API Gateway and the microservices. The commonly used methods include HTTP/HTTPS, gRPC, and asynchronous message passing using Message Queues (MQ).
-
-- **HTTP/HTTPS**: This is the most basic and widely used method. It exchanges data via RESTful APIs. Data is transmitted in the form of JSON, and each microservice possesses independent endpoints.
-
-- **gRPC**: gRPC is a high-performance, open-source general RPC (Remote Procedure Call) framework developed by Google. It uses Protocol Buffers for data serialization in communication, which is faster and more efficient than transmitting data in JSON format.
-
-- **Message Queues (MQ)**: This method communicates between microservices through asynchronous message passing. Message queues act as an intermediary that allows services to send and receive messages from each other. This method is useful for maintaining services independently and controlling service loads.
-`;
-
 export default function Challenge2() {
   return (
     <>
@@ -77,7 +65,6 @@ export default function Challenge2() {
       <SystemSequence />
       <ReactMarkdown children={techComponents} />
       <TechGraph />
-      <ReactMarkdown children={otherArch} />
     </>
   );
 }
