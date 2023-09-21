@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { IconButton, Button, Typography } from "@material-ui/core";
 import DeleteIcon from "@material-ui/icons/Delete";
-import CloseIcon from "@material-ui/icons/Close";
 import PersonIcon from "@material-ui/icons/Person";
 import "./challenge4.css";
 
@@ -112,9 +111,7 @@ export default function MadalView() {
           onClick={() => {
             /* close modal function here */
           }}
-        >
-          <CloseIcon />
-        </IconButton>
+        ></IconButton>
       </div>
       <div style={{ overflowX: "auto" }}>
         <table style={{ width: "100%", borderCollapse: "collapse" }}>

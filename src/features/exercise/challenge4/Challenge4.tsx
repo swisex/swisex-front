@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import Modal from "react-modal";
 import MadalView from "./Challenge4.ModalView";
+import CloseIcon from "@material-ui/icons/Close";
+import "./challenge4.css";
 
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement("#root");
@@ -50,9 +52,10 @@ function ModalButton() {
             bottom: "auto",
             marginRight: "-50%",
             transform: "translate(-50%, -50%)",
-            width: "80%", // set the width
-            height: "60%", // set the height
+            width: "80%",
+            height: "50%",
             overflow: "auto",
+            position: "relative",
           },
           overlay: {
             backgroundColor: "rgba(0, 0, 0, 0.4)",
@@ -60,7 +63,19 @@ function ModalButton() {
         }}
       >
         <MadalView />
-        <button onClick={closeModal}>Close</button>
+        <button
+          onClick={closeModal}
+          style={{
+            position: "absolute",
+            top: 10,
+            right: 10,
+            border: "none",
+            backgroundColor: "transparent",
+            cursor: "pointer",
+          }}
+        >
+          <CloseIcon />
+        </button>
       </Modal>
     </div>
   );
