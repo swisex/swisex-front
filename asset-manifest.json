@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b9e0994c.css",
-    "main.js": "/static/js/main.cbf46ab1.js",
+    "main.js": "/static/js/main.9c0b4e00.js",
     "static/js/666.09b1cd57.chunk.js": "/static/js/666.09b1cd57.chunk.js",
     "static/js/477.db0e1866.chunk.js": "/static/js/477.db0e1866.chunk.js",
     "static/js/959.1dc7c780.chunk.js": "/static/js/959.1dc7c780.chunk.js",
@@ -31,10 +31,12 @@
     "static/js/620.139628c1.chunk.js": "/static/js/620.139628c1.chunk.js",
     "static/js/810.762467ae.chunk.js": "/static/js/810.762467ae.chunk.js",
     "static/js/148.7dce8e06.chunk.js": "/static/js/148.7dce8e06.chunk.js",
+    "static/media/challenge3.png": "/static/media/challenge3.985ff8dd08654f8c2641.png",
+    "static/media/challenge4.png": "/static/media/challenge4.5e9fb4c015494b7c56e9.png",
     "static/media/logo.svg": "/static/media/logo.b2e5a01e505f739f1484b881277d5186.svg",
     "index.html": "/index.html",
     "main.b9e0994c.css.map": "/static/css/main.b9e0994c.css.map",
-    "main.cbf46ab1.js.map": "/static/js/main.cbf46ab1.js.map",
+    "main.9c0b4e00.js.map": "/static/js/main.9c0b4e00.js.map",
     "666.09b1cd57.chunk.js.map": "/static/js/666.09b1cd57.chunk.js.map",
     "477.db0e1866.chunk.js.map": "/static/js/477.db0e1866.chunk.js.map",
     "959.1dc7c780.chunk.js.map": "/static/js/959.1dc7c780.chunk.js.map",
@@ -67,6 +69,6 @@
   },
   "entrypoints": [
     "static/css/main.b9e0994c.css",
-    "static/js/main.cbf46ab1.js"
+    "static/js/main.9c0b4e00.js"
   ]
 }
