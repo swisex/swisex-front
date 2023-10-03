@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+// import { useEffect } from "react";
 import "./App.css";
 import Login from "./features/auth/Login";
 import { useAppSelector } from "./app/hooks";
@@ -8,11 +9,11 @@ import TabBar from "./features/exercise/TabBar";
 function App() {
   const accessToken = useAppSelector(selectAccessToken);
 
-  useEffect(() => {
-    if (accessToken) alert(accessToken);
-  }, [accessToken]);
+  // useEffect(() => {
+  //   if (accessToken) alert(accessToken);
+  // }, [accessToken]);
 
-  if (!accessToken) {
+  if (accessToken) {
     return <Login />;
   } else {
     return <TabBar />;
