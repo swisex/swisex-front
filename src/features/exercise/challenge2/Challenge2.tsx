@@ -61,6 +61,10 @@ export default function Challenge2() {
         <ReactMarkdown children={requirements} />
       </details>
       <ReactMarkdown children={header} />
+      <video controls width="100%" autoPlay>
+        <source src="/challenge2.demo.mp4" type="video/mp4" />
+        Sorry, your browser doesn't support videos.
+      </video>
       <h2> System Workflow </h2>
       <SystemSequence />
       <ReactMarkdown children={techComponents} />

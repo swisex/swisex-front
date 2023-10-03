@@ -24,7 +24,8 @@ const Login = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
             type="password"
-            placeholder="password"
+            placeholder="ping"
+            defaultValue={"ping"}
             className="form-input"
             {...register("password")}
             required
